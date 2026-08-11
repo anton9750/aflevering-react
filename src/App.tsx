@@ -1,71 +1,34 @@
-import "./App.css"
+import "./App.css";
+import { Container } from "./components/Container";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { Main } from "./components/main";
-
-
-
-
-
-
-
-
-
-
-
-
-
+import { Circle } from "./components/circle";
 
 const App = () => {
-return (
+    return (
+        <>
+            <Header />
 
- 
-  <>
+            <Container
+                color="lightblue"
+                width="100px"
+                padding="5rem"
+                margin="2rem"
+            />
 
-  <Footer/>
+            <Circle
+                color="red"
+                width="10px"
+                padding="0"
+                margin="2rem"
+            />
 
-  <Main/>
+            <Main />
 
-  <Header/>
-  <a>
-    <button>¨
-      siden
-    </button>
-    
-  </a>
-
-  <a>
-    <button>
-      <h3>
-        main
-      </h3>
-    </button>
-  </a>
-
-  <footer>
-  <a>
-    <button>
-      <div className="footer">
-        <h3>
-          footer
-        </h3>
-      </div>
-    </button>
-
-  </a>
-  
-  </footer>
-
-
-
-
-  </>
-)
-
-
-
-
-}
+            <Footer />
+        </>
+    );
+};
 
 export default App;
-
