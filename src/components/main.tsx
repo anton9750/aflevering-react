@@ -1,7 +1,14 @@
-export const Main = () => {
+import type {ReactNode} from "react";
+
+type MainProps = {
+    children: ReactNode
+
+}
+
+export const Main = ({ children}: MainProps) => {
     return (
         <main>
-            hello
+            {children}
         </main>
-    )
+    ) 
 }

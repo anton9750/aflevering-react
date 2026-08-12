@@ -110,5 +110,6 @@ code {
   background: var(--code-bg);
 }
 .footer{
-  background-color: red
+  background-color: red;
+  
 }

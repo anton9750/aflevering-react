@@ -1,32 +1,41 @@
-import "./App.css";
+import "./App.scss";
 import { Container } from "./components/Container";
 import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { Main } from "./components/main";
-import { Circle } from "./components/circle";
+import { Navbar } from "./components/Navbar";
+
+
+import { Wrapper } from "./components/wrapper";
 
 const App = () => {
     return (
         <>
+
+
+        <Navbar></Navbar>
             <Header />
 
+
+            <Wrapper>
+                <h1>dav dav</h1>
+                <p>dette er en paragraf</p>
+            </Wrapper>
+
             <Container
-                color="lightblue"
-                width="100px"
-                padding="5rem"
-                margin="2rem"
-            />
-
-            <Circle
                 color="red"
-                width="10px"
-                padding="0"
-                margin="2rem"
+                width="500px"
+                padding="2rem"
+                margin="1rem"
             />
 
-            <Main />
+     
 
-            <Footer />
+            <Main>
+                <h1>hello</h1>
+                <p>dette er en paragraf</p>
+            </Main>
+                      <Footer />
         </>
     );
 };
