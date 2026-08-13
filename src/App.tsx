@@ -24,9 +24,9 @@ const App = () => {
 
             <Container
                 color="red"
-                width="500px"
-                padding="2rem"
-                margin="1rem"
+                width="700px"
+                padding="4rem"
+                margin="2rem"
             />
 
      
